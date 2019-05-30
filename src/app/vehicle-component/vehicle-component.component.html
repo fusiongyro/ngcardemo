@@ -1,0 +1,24 @@
+<pre><code>{{vehicle.getValues() | json}}</code></pre>
+
+<form class="form">
+  <div class="row">
+    <div class="form-group col">
+      <label for="make">Make</label>
+      <input class="form-control" id="make" [(ngModel)]="vehicle.make" name="make">
+    </div>
+
+    <div class="form-group col">
+      <label for="model">Model</label>
+      <input class="form-control" id="model" [(ngModel)]="vehicle.model" name="model">
+    </div>
+
+    <div class="form-group col">
+      <label for="year">Year</label>
+      <input class="form-control" id="year" [(ngModel)]="vehicle.year" name="year">
+    </div>
+  </div>
+
+  <app-wheel-component [wheels]="vehicle.wheels"></app-wheel-component>
+
+  <app-engine-component [engine]="vehicle.engine"></app-engine-component>
+</form>

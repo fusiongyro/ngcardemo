@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="form-group col">
+    <label for="cylinders">Cylinders:</label>
+    <select [(ngModel)]="engine.cylinders" id="cylinders" name="cylinders">
+      <option *ngFor="let size of engine.cylindersAllowed" value="{{size}}">{{size}}</option>
+    </select>
+  </div>
+</div>
