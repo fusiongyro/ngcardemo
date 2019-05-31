@@ -1,6 +1,7 @@
 import {Vehicle} from './vehicle';
 import {Saveable} from './saveable';
 import {Memento} from './memento';
+import {Model} from "./model";
 
 export class Engine implements Saveable {
   vehicle: Vehicle;
@@ -15,5 +16,9 @@ export class Engine implements Saveable {
 
   saveTo(memento: Memento) {
     memento.addField('cylinders', String(this.cylinders));
+  }
+
+  modelChanged(newModel: Model) {
+    // nothing to do yet
   }
 }

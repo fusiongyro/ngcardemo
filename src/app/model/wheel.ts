@@ -7,10 +7,10 @@ export class Wheel implements Saveable {
   size: number;
   id: number;
 
-  constructor(wheels: Wheels, id: number) {
+  constructor(wheels: Wheels, id: number, size: number) {
     this.wheels = wheels;
     this.id = id;
-    this.size = 14;
+    this.size = size;
   }
 
   saveTo(memento: Memento) {

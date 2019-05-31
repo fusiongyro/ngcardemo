@@ -7,13 +7,15 @@ import { WheelComponentComponent } from './wheel-component/wheel-component.compo
 import { EngineComponentComponent } from './engine-component/engine-component.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
+import { ModelComponentComponent } from './model-component/model-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VehicleComponentComponent,
     WheelComponentComponent,
-    EngineComponentComponent
+    EngineComponentComponent,
+    ModelComponentComponent
   ],
   imports: [
     BrowserModule,

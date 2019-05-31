@@ -2,7 +2,7 @@
   <div class="form-group col">
     <label for="wheelSize">Wheel Size:</label>
     <select [(ngModel)]="wheels.wheelSize" id="wheelSize" name="wheelSize">
-      <option *ngFor="let size of wheels.sizes" value="{{size}}">{{size}}</option>
+      <option *ngFor="let size of wheels.formFactor.validSizes" value="{{size}}">{{size}}</option>
     </select>
   </div>
 </div>

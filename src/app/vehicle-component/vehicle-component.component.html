@@ -7,10 +7,7 @@
       <input class="form-control" id="make" [(ngModel)]="vehicle.make" name="make">
     </div>
 
-    <div class="form-group col">
-      <label for="model">Model</label>
-      <input class="form-control" id="model" [(ngModel)]="vehicle.model" name="model">
-    </div>
+    <app-model-component [vehicle]="vehicle"></app-model-component>
 
     <div class="form-group col">
       <label for="year">Year</label>
